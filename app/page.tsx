@@ -54,20 +54,77 @@ export default function DetailsPage() {
     <main className="flex flex-col justify-between min-h-screen p-6 max-w-3xl mx-auto">
       <p className="text-center mb-6">{CATCH_COPY}</p>
       <section className="mb-8 p-4 bg-gray-100 rounded-lg shadow">
-  <h2 className="text-xl font-semibold mb-2">経歴</h2>
+  <h2 className="text-xl font-semibold mb-4">自己紹介</h2>
+  <div className="mb-4">
+    <h3 className="text-lg font-semibold">名前</h3>
+    <p>小野寺 祐人(38)</p>
+  </div>
+  <div className="mb-4">
+    <h3 className="text-lg font-semibold">会社</h3>
+    <p>      <a
+        href="https://movee.jp"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-600 hover:underline"
+      >
+        株式会社movee
+      </a></p>
+  </div>
+  <div className="mb-4">
+    <h3 className="text-lg font-semibold">経歴</h3>
+    <p>不動産や医薬品の営業職を経て、2015年よりソフトウェアエンジニアとして開発業務をしています。2023年より独立して、現在は主にエネルギー企業のソフトウェア開発を請け負っております。</p>
+  </div>
+  <div className="mb-4">
+    <h3 className="text-lg font-semibold">使用言語・技術</h3>
+    <p>Java、TypeScriptを日常的に使用しています。インフラはAWS、VPSを使っています。お客さまのご要望がない場合はUIカスタマイズの自由さ、レスポンスの速さ、などの理由からTypeScript(Next.js)＋VPSで構築します。</p>
+  </div>
+  <div className="mb-4">
+    <h3 className="text-lg font-semibold">その他</h3>
+      ちょっとした書籍を書いたり、OSS開発をしています。
+      <div className="mt-6">
+      <a
+        href="https://www.amazon.co.jp/stores/%E5%B0%8F%E9%87%8E%E5%AF%BA-%E7%A5%90%E4%BA%BA/author/B0D3KQ19ZR"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-600 hover:underline"
+      >
+        Kindle書籍一覧
+      </a>
+      <br/>
+      <a
+        href="https://github.com/yutoonodera"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-600 hover:underline"
+      >
+        Github
+      </a>
+      </div>
+  </div>
 </section>
 
-      <section className="mb-8 p-4 bg-gray-100 rounded-lg shadow">
+
+<section className="mb-8 p-4 bg-gray-100 rounded-lg shadow">
   <h2 className="text-xl font-semibold mb-2">お受けできること</h2>
+  <p>現在、以下の業務をお受けしています。お気軽にお問い合わせください。</p>
+  <div className="mt-6">
   <ul className="list-disc pl-5 space-y-1">
-    <li>ソフトウェア開発</li>
-    <li>エンジニア採用やIT予算検討などのIT全般業務</li>
-    <li>情シス向けUML教育</li>
+    <li>ソフトウェア開発（パッケージ）</li>
+    <li>ソフトウェア開発（オリジナル）</li>
+    <li>技術戦略の立案やIT予算検討、エンジニア採用などのCTO業務全般</li>
   </ul>
+  </div>
+  {/* Tailwind の mt-12 で上に約3行分の余白 */}
+  <div className="mt-6">
+    <strong>問い合わせ先:</strong> y.onodera[at]movee.jp （[at]を@に変えてください）
+  </div>
 </section>
+
 <section className="mb-8 p-4 bg-gray-100 rounded-lg shadow">
         <h2 className="text-xl font-semibold mb-2">開発ソフトウェア</h2>
-        <p>自由にダウンロード・利用可能なプログラムを提供</p>
+        <div className="mt-6">
+        自由にダウンロード・利用可能なプログラムを提供しています。ご自由にお使いください。
+        </div>
         <div className="mb-4"></div>
         <div className="space-y-2">
           <div>
@@ -100,28 +157,6 @@ export default function DetailsPage() {
           ブログ
         </a>
       </div>
-      <div className="mb-8"></div>
-      {/* Company Information Section */}
-      <section className="mb-8 p-4 bg-gray-100 rounded-lg shadow">
-        <h2 className="text-xl font-semibold mb-2">会社情報</h2>
-        <div className="space-y-4">
-          <div>
-            <strong>会社名:</strong> movee株式会社
-          </div>
-          <div>
-            <strong>代表者:</strong> 小野寺 祐人
-          </div>
-          <div>
-            <strong>住所:</strong> 福岡県福岡市中央区天神２丁目３−１０ 天神パインクレスト 716（バーチャルオフィス）
-          </div>
-          <div>
-            <strong>資本金:</strong> 150万円
-          </div>
-          <div>
-            <strong>問い合わせ先:</strong> info[at]movee.jp （[at]を@に変えてください）
-          </div>
-        </div>
-      </section>
     </main>
   );
 }
