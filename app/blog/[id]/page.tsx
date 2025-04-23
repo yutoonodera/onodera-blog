@@ -131,9 +131,6 @@ export default function DetailsPage() {
         （最終更新日: {notionDetails?.page?.last_edited_time ? formatDaytoDayAgo(notionDetails.page.last_edited_time) : "不明"}）
       </Paragraph>
       <Paragraph>
-        こんにちは、株式会社moveeの {notionDetails?.page?.properties?.updatedUser?.last_edited_by?.name || "moveeユーザー"}です。
-      </Paragraph>
-      <Paragraph>
         このページは<strong>{notionDetails?.page?.properties?.Name?.title[0]?.text?.content || "タイトルなし"}</strong>について、です。
       </Paragraph>
 
@@ -146,7 +143,8 @@ export default function DetailsPage() {
       <section className="flex flex-col mt-auto">
         <CardList notionData={notionData.map((item) => ({ ...item, isActive: item.link === `/blog/${id}` }))} onCardClick={handleNavigate} />
       </section>
-      <h1 className="text-center mt-8 mb-6">{Constants.CATCH_COPY}</h1>
+      <h1 className="text-2xl font-bold text-center mt-8 mb-6">{Constants.CATCH_COPY}</h1>
+      <h1 className="text-center mt-8 mb-6">{Constants.ABOUT}</h1>
     </main>
   );
 }

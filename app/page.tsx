@@ -52,7 +52,7 @@ export default function DetailsPage() {
 
   return (
     <main className="flex flex-col justify-between min-h-screen p-6 max-w-3xl mx-auto">
-      <p className="text-center mb-6">{CATCH_COPY}</p>
+      <h1 className="text-2xl font-bold text-center mt-8 mb-6">{Constants.CATCH_COPY}</h1>
       <section className="mb-8 p-4 bg-gray-100 rounded-lg shadow">
   <h2 className="text-xl font-semibold mb-4">自己紹介</h2>
   <div className="mb-4">
@@ -76,7 +76,7 @@ export default function DetailsPage() {
   </div>
   <div className="mb-4">
     <h3 className="text-lg font-semibold">使用言語・技術</h3>
-    <p>Java、TypeScriptを日常的に使用しています。インフラはAWS、VPSを使っています。お客さまのご要望がない場合はUIカスタマイズの自由さ、レスポンスの速さ、などの理由からTypeScript(Next.js)＋VPSで構築します。</p>
+    <p>Java、TypeScript、ときどきPHPを使用しています。インフラはAWS、VPSを使っています。お客さまのご要望がない場合はTypeScript(Next.js)もしくは、PHP(Laravel)で構築します。</p>
   </div>
   <div className="mb-4">
     <h3 className="text-lg font-semibold">その他</h3>
@@ -106,7 +106,7 @@ export default function DetailsPage() {
 
 <section className="mb-8 p-4 bg-gray-100 rounded-lg shadow">
   <h2 className="text-xl font-semibold mb-2">お受けできること</h2>
-  <p>現在、以下の業務をお受けしています。お気軽にお問い合わせください。</p>
+  <p>以下の業務をお受けしております。お気軽にお問い合わせください。</p>
   <div className="mt-6">
   <ul className="list-disc pl-5 space-y-1">
     <li>ソフトウェア開発（パッケージ）</li>

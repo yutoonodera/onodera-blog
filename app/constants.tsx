@@ -10,8 +10,10 @@ export const OPEN_GRAPH_IMAGE_HEIGHT = '630';
 export const MOVEE_USER = '小野寺';
 export const FINISH_GREETING = '最後までお読みいただきありがとうございました。';
 
-export const CATCH_COPY = (
-  <a href="/" className="text-blue-600 hover:underline">
+export const CATCH_COPY = 'Web Software With movee ';
+
+export const ABOUT = (
+  <a href="/" className="text-black-600">
     ブログ作成者について
   </a>
 );
