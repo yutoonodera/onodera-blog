@@ -65,7 +65,7 @@ export default function DetailsPage() {
         href="https://movee.jp"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-blue-600 hover:underline"
+        className="text-black-600 hover:underline"
       >
         株式会社movee
       </a></p>
@@ -86,7 +86,7 @@ export default function DetailsPage() {
         href="https://www.amazon.co.jp/stores/%E5%B0%8F%E9%87%8E%E5%AF%BA-%E7%A5%90%E4%BA%BA/author/B0D3KQ19ZR"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-blue-600 hover:underline"
+        className="text-black-600 hover:underline"
       >
         Kindle書籍一覧
       </a>
@@ -95,7 +95,7 @@ export default function DetailsPage() {
         href="https://github.com/yutoonodera"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-blue-600 hover:underline"
+        className="text-black-600 hover:underline"
       >
         Github
       </a>

@@ -13,7 +13,7 @@ export const FINISH_GREETING = '最後までお読みいただきありがとう
 export const CATCH_COPY = 'Web Software With movee ';
 
 export const ABOUT = (
-  <a href="/" className="text-black-600">
+  <a href="/" className="text-black-600 hover:underline">
     ブログ作成者について
   </a>
 );
